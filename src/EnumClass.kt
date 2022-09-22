@@ -12,6 +12,9 @@ enum class IPL : TestImplement, TestImplement2 {
     T2 {override fun test(a: Int) = a * a} ;
     override fun test2(b: Int) = b * b
 }
+abstract class DefaultPrintable  {
+    abstract val name: String?
+}
 fun main(){
     // Use
     val ipl = IPL.T1
