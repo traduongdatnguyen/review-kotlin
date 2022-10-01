@@ -3,6 +3,7 @@ class DataArrays(val arrs : Array<Students>) {
     val numbers = listOf("Nguyen","Trà","Dương","Nguyên")
     val mutableLists = mutableListOf("Nguyen","Trà","Dương","Nguyên")
     val numberSets = setOf("nguyen",2,5,5,"nguyen")
+    val arrListOf = arrayOf(2,4);
     val numberMaps = mapOf(2 to "Nguyen")
     init {
         family = arrayOf (

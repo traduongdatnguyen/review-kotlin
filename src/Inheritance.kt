@@ -3,6 +3,7 @@ open class Employee( name: String,age: Int,salary : Int) {
         println("My name is $name, $age years old and earning $salary per month. ")
     }
 }
+
 class webDeveloper( name: String,age: Int,salary : Int): Employee(name, age,salary) {
     fun website() {
         println("I am website developer")

@@ -13,7 +13,9 @@ enum class IPL : TestImplement, TestImplement2 {
     override fun test2(b: Int) = b * b
 }
 abstract class DefaultPrintable  {
-    abstract val name: String?
+}
+class EnumClass :DefaultPrintable(){
+
 }
 fun main(){
     // Use
