@@ -27,6 +27,8 @@ fun simpleTaxCalculator(amount: Double) = amount * 0.3
 fun calculateTax(salary: Double, func: (Double) -> Double): Double {
     return func(salary)
 }
+
+
 fun main() {
     val result = square(4)
     println("result: $result")
