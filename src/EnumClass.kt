@@ -7,15 +7,17 @@ interface TestImplement2 {
     fun test2(b: Int): Int
 }
 
-enum class IPL : TestImplement, TestImplement2 {
-    T1 {override fun test(a: Int) = a * a } ,
-    T2 {override fun test(a: Int) = a * a} ;
-    override fun test2(b: Int) = b * b
-}
+
 abstract class DefaultPrintable  {
 }
 class EnumClass :DefaultPrintable(){
 
+}
+
+enum class IPL constructor(val a:Int) : TestImplement, TestImplement2{
+    T1(2) {override fun test(a: Int) = a * a } ,
+    T2(4) {override fun test(a: Int) = a * a} ;
+    override fun test2(b: Int) = b * b
 }
 fun main(){
     // Use

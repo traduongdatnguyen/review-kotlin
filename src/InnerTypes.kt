@@ -25,8 +25,16 @@ class Util {
         abstract val name: String?
     }
 }
-
+class Outer {
+    private val bar: Int = 1
+    inner class Inner {
+        fun foo() = bar
+    }
+}
 fun main() {
     val printer = Util.Printer()
     printer.print("Hello World")
+
+    val showView= Outer().Inner().foo()
+    println(showView)
 }

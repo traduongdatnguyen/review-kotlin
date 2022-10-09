@@ -2,6 +2,10 @@ data class DataSum(val sumArray: ArrayList<Int>)
 open interface InterfaceAbstracts{
     abstract fun equaSumMax(a:Int, b:Int)
     abstract fun equaArrayNumber(arraySum: DataSum)
+    // Không thể khai báo inner class bên trong một Interface
+//    inner class A{
+//
+//    }
 }
 class InheritanceInterface(val sumArray_: DataSum, val a: Int, val b: Int) : InterfaceAbstracts {
 
@@ -18,11 +22,19 @@ class InheritanceInterface(val sumArray_: DataSum, val a: Int, val b: Int) : Int
 // abstract class
 abstract class Calculator {
     abstract fun cal(x: Int, y: Int) : Int
+    inner class A{
+
+    }
 }
 // addition of two numbers
 class Add : Calculator() {
     override fun cal(x: Int, y: Int): Int {
         return x + y
+    }
+    class C{
+        inner class D{
+
+        }
     }
 }
 // subtraction of two numbers
@@ -44,3 +56,4 @@ fun main() {
     InheritanceInterface.equaSumMax(InheritanceInterface.a, InheritanceInterface.b)
     InheritanceInterface.equaArrayNumber(InheritanceInterface.sumArray_)
 }
+
