@@ -1,5 +1,8 @@
-data class GameContent(val x: Double, val y: Double)
 
+open class Game
+abstract class AbTrac
+interface ShowData
+data class GameContent(val x: Double, val y: Double) : Game(),ShowData
 sealed class Shape{
     class Circle(var radius: Float): Shape()
     class Square(var length: Int): Shape()
