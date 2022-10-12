@@ -7,6 +7,8 @@ open interface InterfaceAbstracts{
 //
 //    }
 }
+object N
+open class A
 class InheritanceInterface(val sumArray_: DataSum, val a: Int, val b: Int) : InterfaceAbstracts {
 
     override fun equaSumMax(a: Int,b: Int) {
@@ -20,7 +22,7 @@ class InheritanceInterface(val sumArray_: DataSum, val a: Int, val b: Int) : Int
     }
 }
 // abstract class
-abstract class Calculator {
+abstract class Calculator:InterfaceAbstracts, A() {
     abstract fun cal(x: Int, y: Int) : Int
     inner class A{
 
@@ -31,6 +33,15 @@ class Add : Calculator() {
     override fun cal(x: Int, y: Int): Int {
         return x + y
     }
+
+    override fun equaSumMax(a: Int, b: Int) {
+        TODO("Not yet implemented")
+    }
+
+    override fun equaArrayNumber(arraySum: DataSum) {
+        TODO("Not yet implemented")
+    }
+
     class C{
         inner class D{
 
@@ -42,11 +53,27 @@ class Sub : Calculator() {
     override fun cal(x: Int, y: Int): Int {
         return x - y
     }
+
+    override fun equaSumMax(a: Int, b: Int) {
+        TODO("Not yet implemented")
+    }
+
+    override fun equaArrayNumber(arraySum: DataSum) {
+        TODO("Not yet implemented")
+    }
 }
 // multiplication of two numbers
 class Mul : Calculator() {
     override fun cal(x: Int, y: Int): Int {
         return x * y
+    }
+
+    override fun equaSumMax(a: Int, b: Int) {
+        TODO("Not yet implemented")
+    }
+
+    override fun equaArrayNumber(arraySum: DataSum) {
+        TODO("Not yet implemented")
     }
 }
 

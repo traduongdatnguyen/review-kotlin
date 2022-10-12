@@ -1,6 +1,12 @@
-fun main() {
+class Obj {
+    inner class A{
+//        object H{
+//
+//        }
+    }
+
 // Defines a new object which is anonymous
-    val obj = object{
+    val obj = object : Ojb(){
         var x: Int = 0
         val y = 42
         val MAX: Int
@@ -13,4 +19,9 @@ fun main() {
             println("Print Me")
         }
     }
+    abstract class Ojb
+}
+fun main(){
+    val Obj = Obj()
+    print(Obj.obj)
 }

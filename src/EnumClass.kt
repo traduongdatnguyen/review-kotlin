@@ -9,11 +9,11 @@ interface TestImplement2 {
 
 
 abstract class DefaultPrintable  {
+    inner class A
 }
 class EnumClass :DefaultPrintable(){
 
 }
-
 enum class IPL constructor(val a:Int) : TestImplement, TestImplement2{
     T1(2) {override fun test(a: Int) = a * a } ,
     T2(4) {override fun test(a: Int) = a * a} ;
