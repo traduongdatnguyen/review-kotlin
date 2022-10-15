@@ -1,4 +1,3 @@
-
 open class Game
 abstract class AbTrac
 interface ShowData
@@ -40,5 +39,8 @@ fun main(args: Array<String>) {
     println(inst1 == inst2)
 // Uses default implementation of hashCode()
     println(inst1.hashCode())
+
+// Array
+
 
 }

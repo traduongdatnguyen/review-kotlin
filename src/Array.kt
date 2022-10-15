@@ -5,6 +5,10 @@ class DataArrays(val arrs : Array<Students>) {
     val numberSets = setOf("nguyen",2,5,5,"nguyen")
     val arrListOf = arrayOf(2,4);
     val numberMaps = mapOf(2 to "Nguyen")
+    val arrNew = Array(3, {i -> i * 1} )
+
+
+
     init {
         family = arrayOf (
             arrayOf("John", "Denise", "Phoebe", "Adam"),
@@ -44,4 +48,11 @@ fun main(){
     dataArrays.mutableLists.add("Hello")
     println(dataArrays.mutableLists)
     println(dataArrays.numberSets)
+    dataArrays.arrListOf.set(1,5)
+    println(dataArrays.arrListOf[1])
+    for (i in 0..dataArrays.arrNew.size-1)
+    {
+        println(dataArrays.arrNew[i])
+    }
+
 }
